@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>flex3</title>
+    <style>
+        body{
+    display: flex;
+    font-size: 20px;
+}
+ 
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Header{
+    height: 70px;
+    width: 1220px;
+    background-color: lightblue;
+    order: 0;
+    margin: 0.5em;
+
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+}
+
+.Aside{
+    height: 405px;
+    width: 280px;
+    background-color: cyan;
+    order: 3;
+    margin: 0.5em;
+
+
+}
+
+.Article{
+    height: 405px;
+    width: 920px;
+    background-color: tomato;
+    display: flex;
+    order: 3;
+    margin: 0.5em;
+    
+}
+
+.img{
+    height: 170px;
+    width: 170px;
+    background-color: lightgrey;
+    order: 5;
+    align-self: flex-end;
+    margin-left: 75px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Footer{
+    height: 70px;
+    width: 1220px;
+    background-color: lightblue;
+    order: 4;   
+    margin: 0.5em; 
+
+}
+
+
+
+    </style>
+</head>
+<body> 
+
+    <div id="container">
+        <div class="Header">Header</div>
+    <div id="main">
+        <div class="Aside">Aside</div>
+        <div class="Article">Article
+            <div class="img">Image</div>
+            <div class="img">Image</div>
+            <div class="img">Image</div>
+        </div>
+    </div>
+        <div class="Footer">Footer</div>
+    </div>
+    
+</body>
+</html>
